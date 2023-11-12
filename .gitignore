@@ -1,0 +1,17 @@
+
+\.idea/
+
+venv/
+
+__pycache__/
+
+sessions/
+
+sessions2/
+
+\.env
+
+new_sessions/
+logs
+
+dev\.cfg
