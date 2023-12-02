@@ -19,9 +19,11 @@ class TodoViewSet(viewsets.ModelViewSet):
     serializer_class = TodoSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def create(self, request):
-        serializer = self.get_serializer(data=request.data, many=True)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    # def create(self, request):
+    #     print(request)
+    #     print(request.data)
+    #     serializer = self.get_serializer(data=request.data, many=True)
+    #     serializer.is_valid(raise_exception=True)
+    #     serializer.save()
+    #
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED)
